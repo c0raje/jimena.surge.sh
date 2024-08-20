@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  overflow: hidden scroll;
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  font-size: 12px;
+}
+
+main {
+  font-size: 10px;
+}
+
+.contenedor-horario {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0 auto;
+  width: 98vw;
+  overflow: hidden;
+}
+.horario {
+  overflow: scroll;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.p-1 {
+  padding: 4px 6px;
+  background: #eee;
+  min-width: max-content;
+  border-radius: 4px;
+  text-align: center;
+}
+.p-2 {
+  padding: 6px 8px;
+  min-width: 100px;
+  background: #ddd;
+  border-radius: 6px;
+  position: relative;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0px 0px 2px #000, 0px 0px 2px #000;
+  text-align: center;
+}
+.p-3 {
+  background: #ccc;
+}
+
+.p-2::before {
+  position: absolute;
+  right: -4px;
+  top: -8px;
+  background: #5af;
+  border-radius: 4px;
+  padding: 2px;
+  font-size: 8px;
+  color: #fff;
+}
+
+.p-2-1::before {
+  content: "10:20 / 11:10";
+}
+
+.p-2-2::before {
+  content: "11:10 / 12:00";
+}
+
+.p-2-3::before {
+  content: "12:00 / 12:50";
+}
+
+.p-2-4::before {
+  content: "12:50 / 13:40";
+}
+
+.p-2-5::before {
+  content: "13:40 / 14:30";
+}
+
+.p-2-6::before {
+  content: "14:30 / 15:20";
+}
+
+.p-2-7::before {
+  content: "15:20 / 16:10";
+}
+
+.p-2-8::before {
+  content: "16:10 / 17:00";
+}
+
+.p-2-9::before {
+  content: "17:00 / 17:50";
+}
+
+
+
+
+/* Ejemplo de estilos CSS para los colores de fondo */
+
+.fondo-anaranjado {
+  background-color: #FFA500;
+}
+
+.fondo-azul-rey {
+  background-color: #0033A0;
+}
+
+.fondo-amarillo {
+  background-color: #FFFF00;
+}
+
+.fondo-rojo {
+  background-color: #CC0000;
+}
+
+.fondo-lawngreen {
+  background-color: #7CFC00;
+}
+
+.fondo-lila {
+  background-color: #8A2BE2;
+}
+
+.fondo-morado {
+  background-color: #6A0D91;
+}
+
+.fondo-verde-fosforescente {
+  background-color: #00FF00;
+}
